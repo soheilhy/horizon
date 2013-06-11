@@ -100,6 +100,8 @@ class NetworksTable(tables.DataTable):
     status = tables.Column("status", verbose_name=_("Status"))
     admin_state = tables.Column("admin_state",
                                 verbose_name=_("Admin State"))
+    controller = tables.Column('controller',
+                               verbose_name=_('OpenFlow Controller'))
 
     class Meta:
         name = "networks"

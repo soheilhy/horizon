@@ -92,6 +92,7 @@ class UpdateView(forms.ModalFormView):
         return {'network_id': network['id'],
                 'tenant_id': network['tenant_id'],
                 'name': network['name'],
+                'controller': network['controller'],
                 'admin_state': network['admin_state_up']}
 
 

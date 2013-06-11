@@ -41,6 +41,10 @@ class CreateNetworkInfoAction(workflows.Action):
                                required=False)
     admin_state = forms.BooleanField(label=_("Admin State"),
                                      initial=True, required=False)
+    controller = forms.CharField(label=_('Controller Address'),
+                                 required=False,
+                                 initial='',
+                                 help_text=_('host[:port]'))
 
     class Meta:
         name = _("Network")
